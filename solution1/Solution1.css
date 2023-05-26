@@ -1,0 +1,149 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p {
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+header {
+  width: 100%;
+  /* 横幅いっぱい */
+  height: 120px;
+  /* 高さ120px */
+  background-color: #FF9A4B;
+  /* 背景色red */
+}
+
+main {
+  width: 960px;
+  display: flex;
+  margin: 50px auto;
+}
+
+.blog-box {
+  width: 300px;
+  /* 横幅いっぱい */
+  margin-right: 30px;
+  padding: 10px;
+  /* margin: 10px auto; */
+  position: relative;
+  background-color: #EEEEEE;
+  /* 背景色red */
+}
+
+.step-box:last-child {
+  margin-right: 0;
+}
+
+.blog-image {
+  width: 280px;
+  /* 横幅いっぱい */
+  height: 150px;
+  background-position: bottom;
+  background-size: cover;
+  /* 高さ120px */
+  /* position: relative; */
+  background-image: url("img4/flow01.png");
+}
+
+.blog-image2 {
+  width: 280px;
+  /* 横幅いっぱい */
+  height: 150px;
+  /* 高さ120px */
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("img4/flow02.png");
+}
+
+.blog-image3 {
+  width: 280px;
+  /* 横幅いっぱい */
+  height: 150px;
+  /* 高さ120px */
+  background-position: bottom;
+  background-size: cover;
+  background-image: url("img4/flow03.png");
+
+}
+
+.blog-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+}
+
+.blog-text {
+  margin: 15px 0 5px;
+}
+
+
+footer {
+  height: 50px;
+  /* 高さ120px */
+  background-color: #AAAA;
+  /* 背景色red */
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 90%;
+    display: block;
+    margin: 50px auto;
+  }
+
+
+  .blog-box {
+    width: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 20px;
+    margin: 20px auto;
+
+  }
+  .step-box:last-child {
+    margin-right: 0;
+    }
+
+  .blog-image {
+    width: 100%;
+    height: 150px;
+    background-position: bottom;
+    background-size: cover;
+  }
+  .blog-image2 {
+    width: 100%;
+    height: 150px;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .blog-image3 {
+    width: 100%;
+    height: 150px;
+    background-position: bottom;
+    background-size: cover;
+  }
+  .blog-num {
+
+    top: 0;
+    left: 0;
+    background-color: #ff9a4b;
+  }
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+ 
+}
